@@ -28,61 +28,61 @@ from Semester import district_wise_student_counts_and_total_schools,district_wis
 
 class MyTestSuite(unittest.TestCase):
 
-    # def test_issue1(self):
-    #     smoke_test = unittest.TestSuite()
-    #     smoke_test.addTests([
-    #         # file name .class name
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(district_student_check_8.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(district_attendance_check_8.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(district_student_check_9.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(district_attendance_check_9.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(district_student_check_10.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(district_attendance_check_10.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(block_student_check_8.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(block_attendance_check_8.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(block_student_check_9.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(block_attendance_check_9.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(block_student_check_10.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(block_attendance_check_10.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(cluster_student_check_8.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(cluster_attendance_check_8.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(cluster_student_check_9.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(cluster_attendance_check_9.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(cluster_student_check_10.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(cluster_attendance_check_10.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(school_student_check_8.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(school_attendance_check_8.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(school_student_check_9.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(school_attendance_check_9.SAR),
-    #
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(school_student_check_10.SAR),
-    #         unittest.defaultTestLoader.loadTestsFromTestCase(school_attendance_check_10.SAR)
-    #
-    #
-    #     ])
-    #     p = pwd()
-    #     outfile = open(p.get_report_path(), "w")
-    #
-    #     runner1 = HTMLTestRunner.HTMLTestRunner(
-    #         stream = outfile,
-    #         title ='Cqube Metrics Test Report',
-    #         verbosity = 1,
-    #         description= '8 = August, 9 = September, 10 = October '
-    #
-    #     )
-    #
-    #     runner1.run(smoke_test)
-    #     outfile.close()
+    def test_issue1(self):
+        smoke_test = unittest.TestSuite()
+        smoke_test.addTests([
+            # file name .class name
+            unittest.defaultTestLoader.loadTestsFromTestCase(district_student_check_8.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(district_attendance_check_8.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(district_student_check_9.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(district_attendance_check_9.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(district_student_check_10.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(district_attendance_check_10.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(block_student_check_8.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(block_attendance_check_8.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(block_student_check_9.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(block_attendance_check_9.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(block_student_check_10.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(block_attendance_check_10.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(cluster_student_check_8.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(cluster_attendance_check_8.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(cluster_student_check_9.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(cluster_attendance_check_9.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(cluster_student_check_10.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(cluster_attendance_check_10.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(school_student_check_8.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(school_attendance_check_8.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(school_student_check_9.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(school_attendance_check_9.SAR),
+
+            unittest.defaultTestLoader.loadTestsFromTestCase(school_student_check_10.SAR),
+            unittest.defaultTestLoader.loadTestsFromTestCase(school_attendance_check_10.SAR)
+
+
+        ])
+        p = pwd()
+        outfile = open(p.get_report_path(), "w")
+
+        runner1 = HTMLTestRunner.HTMLTestRunner(
+            stream = outfile,
+            title ='Cqube Metrics Test Report',
+            verbosity = 1,
+            description= '8 = August, 9 = September, 10 = October '
+
+        )
+
+        runner1.run(smoke_test)
+        outfile.close()
 
     def test_issue2(self):
         smoke_test = unittest.TestSuite()
