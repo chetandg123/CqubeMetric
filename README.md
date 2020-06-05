@@ -1,5 +1,5 @@
 CqubeMetric is a test script which is used to calculate the metrics, by using the queries and json files(s3 output bucket json files).
-This provides the report based on the student attendance report,crc and semester
+This provides the report based on the student attendance report,crc and semester.
 To run this test script,json_data should be downloaded from s3 output bucket and stored in the local machine.
 
 Fill the Details in crc_ini 
